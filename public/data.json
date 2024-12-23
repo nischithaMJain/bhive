@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1, 
+        "title":"Community Events",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/CommunityIcon-2cc31015.svg"
+    },
+     {
+        "id": 2, 
+        "title":"Gym Facilities",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/GymIcon-3f889a31.svg"
+    },
+     {
+        "id": 3, 
+        "title":"High-Speed WiFi",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/WifiIcon-7c9e5728.svg"
+    },
+     {
+        "id": 4, 
+        "title":"Cafe & Tea Bar",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/CupIcon-d454ab41.svg"
+    },
+     {
+        "id": 5, 
+        "title":"Affordable",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/AffordableIcon-2f9a51d1.svg"
+    },
+     {
+        "id": 6, 
+        "title":"Comfort Lounges",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/LoungeIcon-b3c787b9.svg"
+    }, {
+        "id": 7, 
+        "title":"Quick Booking",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/ClockIcon-fe81004c.svg"
+    }, {
+        "id": 8, 
+        "title":"Sports Area",
+        "icon":"https://booking-stag.bhiveworkspace.com/assets/SportsIcon-c40ed066.svg"
+    }
+]

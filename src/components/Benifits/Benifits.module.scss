@@ -1,0 +1,46 @@
+@import '../../styles/common.scss';
+.proList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    @include ipad{
+         margin-bottom: 40px;
+     }
+}
+.proitem{
+    flex: 20% 1;
+    display: flex;
+    padding: 20px;
+     @include ipad{
+        flex: 40% 1;
+        box-shadow: 0px 2px 4px 0px #0000000F;
+        background-color: white;
+        margin: 5px;
+        border-radius: 6px;
+     }
+     @include mobile{
+        flex: 1 1 25%; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 28px;
+            height: 14px;
+        }
+     }
+}
+.title{
+    padding-left: 10px;
+    font-size: 18px;
+    color: #263238;
+    @include mobile{
+    text-align: center;
+    font-size: 14px;
+    }
+}
+.heading{
+    @include fontStyling($primary-text);
+    @include smallTablet{
+        padding-top: 20px;
+    }
+}

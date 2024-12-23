@@ -1,0 +1,27 @@
+@import '../../styles/common.scss';
+.cardContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  margin-bottom: 48px;
+   @media (max-width: 1570px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include ipad{
+     grid-template-columns: 500px;
+    justify-content: center;
+    gap: 40px;
+  }
+    @include smallTablet{
+     grid-template-columns: 400px;
+    justify-content: center;
+    gap: 40px;
+  }
+  @include mobile{
+        grid-template-columns: 350px;
+        gap: 16px;
+  }
+}
+h2{
+  @include fontStyling($primary-text);
+}
