@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --primary-btn-light-yellow: #FFBB00;
+  --primary-btn-dark-yellow: #FFC422;
+  --secondary-light-gray: #F9F9F9;
+  --secondary-dark-gray: #CEC6C6;
+  --primary-text: #263238;
+  --secondary-text: #65624C;
+
+  --font-family: "Inter",
+    serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F9FAFF;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+h1,
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #263238;
+  font-weight: 700;
+
+  svg {
+    display: none;
+  }
+
+}
+
+@media (max-width:991px) {
+
+  h1,
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:767px) {
+
+  h2 {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      display: block;
+      color: var(--primary-btn-dark-yellow);
+    }
+  }
+}

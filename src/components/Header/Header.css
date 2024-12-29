@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 25px 120px !important;
+
+}
+
+.call {
+    color: #F2B304;
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    border: 1px solid #F2B304;
+    border-radius: 4px;
+    box-shadow: 4px 4px 14px 0px #0000000F;
+}
+
+@media (max-width:991px) {
+    .header {
+        padding: 20px 20px !important;
+    }
+}

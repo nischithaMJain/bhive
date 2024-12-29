@@ -3,21 +3,22 @@ import Loading from '../Loading/Loading';
 import downloadImg from '../../assets/DownloadSection.svg';
 import playStore from '../../assets/googleplay.png';
 import googlePlay from '../../assets/imgeStore.png';
-import styles from './Download.module.scss'
+import './Download.css'
 import { GoArrowRight } from 'react-icons/go';
+import { Container } from '@mui/material';
 const Image = lazy(() => (import('../Image/Image')));
 const Download = () => {
     return (
-        <div className={styles.download}>
+        <Container className="download">
             <h2>Download Our App now <GoArrowRight /></h2>
-            <div className={styles.downloadContainer}>
+            <div className="downloadContainer">
 
                 <Suspense fallback={<Loading />}>
                     <Image src={downloadImg} alt="" width={400} height={470} />
                 </Suspense>
-                <div className={styles.downloadContent}>
+                <div className="downloadContent">
                     <p>Boost your productivity with the BHIVE Workspace app. Elevate your workspace, collaborate efficiently, and unlock exclusive perks.</p>
-                    <div className={styles.btnContainer}> <button>
+                    <div className="btnContainer"> <button>
                         <Suspense fallback={<Loading />}>
                             <Image src={playStore} alt="Download app on Google play" width={146} height={45} />
                         </Suspense>
@@ -32,7 +33,7 @@ const Download = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Container>
     )
 }
 

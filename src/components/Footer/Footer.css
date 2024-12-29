@@ -1,6 +1,13 @@
-footer{
+@media (max-width: 991px) {}
+
+footer {
     background-color: #222E34;
     color: #DDDDDD;
     text-align: center;
     font-size: 14px;
+    padding: 22px;
+
+    p {
+        margin: 0px;
+    }
 }

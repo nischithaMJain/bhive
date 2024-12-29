@@ -1,0 +1,163 @@
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.cardtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #263238;
+    margin: 0px;
+    width: 280px;
+}
+
+.card {
+    position: relative;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 1.08px 8.63px 0px #0000000F;
+    border: 1px solid #EEE7E7CC;
+}
+
+.directions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #EEE7E7;
+    width: 52px;
+    height: 52px;
+    background-color: #EEE7E7;
+    border-radius: 8px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.directions span:last-child {
+    color: #26323880;
+    font-size: 8px;
+}
+
+.directions span:first-child {
+    color: #1C1B1F;
+    border: 1px solid #1C1B1F;
+    border-radius: 50%;
+    width: 20px;
+    position: relative;
+    left: 15px;
+    margin-bottom: 5px;
+
+    svg {
+        position: relative;
+        top: 0ch;
+        font-size: 15px;
+    }
+}
+
+.directions::before {
+    background-color: #1C1B1F;
+    transform: rotate(180px);
+}
+
+.priceDiscountBtn::after,
+.pricePerDayBtn::after {
+    content: url('../../../assets/next.svg');
+    margin-left: 10px;
+}
+
+.discountFlag>span {
+    right: 75px;
+    font-size: 8px;
+    border-radius: 3px;
+    padding: 4px;
+    white-space: nowrap;
+    background-color: #263238;
+}
+
+.iconConainer {
+    position: absolute;
+    top: 185px;
+    padding: 0px 25px;
+
+    .prev {
+        position: absolute;
+        left: 420px;
+        top: 0px;
+    }
+}
+
+.prev,
+.next {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+
+    svg {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+}
+
+.next {
+    left: 10px;
+
+    svg {
+        transform: rotate(180deg);
+        padding-bottom: 5px;
+        padding-top: 0px;
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+}
+
+.button-group {
+    margin-top: 22px;
+    display: flex !important;
+    justify-content: space-between;
+    border: none;
+    box-shadow: none !important;
+}
+
+.locimage {
+    border-radius: 6px;
+}
+
+.pricePerDayBtn,
+.priceDiscountBtn {
+    font-family: "Inter",
+        serif;
+
+    span {
+        color: #65624C;
+    }
+
+    .price {
+        color: #263238;
+        font-weight: 500;
+
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.priceDiscountBtn {
+    padding-top: 9px !important;
+}
+
+@media (max-width:991px) {
+    .button-group {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card {
+        max-width: 320px !important;
+    }
+}

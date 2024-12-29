@@ -1,4 +1,4 @@
-@import '../../styles/common.scss';
+/* @import '../../styles/common.scss';
 .cardContainer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -24,4 +24,4 @@
 }
 h2{
   @include fontStyling($primary-text);
-}
+} */
