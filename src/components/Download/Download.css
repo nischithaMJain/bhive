@@ -1,0 +1,58 @@
+.downloadContainer {
+    display: flex;
+    background-color: white;
+    height: 256px;
+    align-items: end;
+    margin-top: 230px;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 18px;
+    color: #605F5F;
+    border: 1px solid #EEE7E7CC;
+}
+
+
+.downloadContent {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+
+    p {
+        width: 586px;
+        color: #605F5F;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+}
+
+button {
+    border: 0;
+    background: white;
+}
+
+@media (max-width:991px) {
+    .downloadContainer {
+        display: block;
+        margin: 0;
+        text-align: center;
+        height: 100%;
+        margin-bottom: 40px;
+        padding-bottom: 12px;
+
+        .downloadContent {
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .downloadContainer>img {
+        width: 300px !important;
+        height: 350px !important;
+        margin-bottom: 20px;
+    }
+}

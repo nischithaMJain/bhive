@@ -1,0 +1,49 @@
+.intoduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../assets/HeroDesktop.svg');
+    background-repeat: no-repeat;
+    height: 620px;
+    background-size: 100%;
+    margin-bottom: 36px;
+
+}
+
+
+.content {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 58px;
+    width: 800px;
+    line-height: 1.25;
+    overflow: hidden;
+    color: #263238;
+    margin: 0px;
+}
+
+.price {
+    color: #F2B304;
+}
+
+@media (max-width:991px) {
+    .content {
+        font-size: 30px;
+        width: 400px;
+    }
+
+    .intoduction {
+        height: 320px;
+    }
+}
+
+@media (max-width:575px) {
+    .content {
+        margin-top: 380px;
+        font-size: 20px;
+    }
+
+    .intoduction {
+        background-image: url('../../assets/HeroMobile.svg');
+    }
+}

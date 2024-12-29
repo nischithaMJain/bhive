@@ -14,7 +14,7 @@ const useFetch = (url: string) => {
             })
             .then((arr: OverView[]) => setData(arr))
             .catch(err => console.error('Error'))
-    }, [])
+    }, [url])
     return [data];
 };
 

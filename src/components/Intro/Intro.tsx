@@ -1,10 +1,11 @@
 import React from 'react'
-import styles from './Intro.module.scss'
+import './Intro.css'
+import Container from '@mui/material/Container'
 const Intro = () => {
   return (
-    <div className={styles.intro}>
-      <div className={styles.content}>Host your meeting with world-class amenities. Starting at <span className={styles.price}> ₹199/-!</span></div>
-    </div>
+    <Container maxWidth="lg" className="intoduction">
+      <h1 className='content'>Host your meeting with world-class amenities. Starting at <span className="price">₹199/-!</span></h1>
+    </Container>
   )
 }
 

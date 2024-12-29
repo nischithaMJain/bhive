@@ -1,0 +1,94 @@
+.grid-item {
+    justify-self: center;
+    padding: 26px;
+    padding-left: 0px;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+}
+
+.grid-item:hover {
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px #0000000F;
+    border-radius: 8px;
+    padding: 15px;
+    transform: translate(0.5rem, -0.5rem);
+    transition: transform 0.3s ease-in-out;
+}
+
+.title {
+    padding: 0px 15px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.grid-item:hover::after {
+    content: "One liner details about the feature";
+    font-size: 12px;
+    color: grey;
+    padding-left: 40px;
+}
+
+@media (max-width: 991px) {
+    .grid-item {
+        background-color: white;
+        width: 355px !important;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        box-shadow: 0px 2px 4px 0px #0000000F;
+
+        .data {
+            flex-direction: column;
+            row-gap: 8px;
+
+            img {
+                height: 32px;
+            }
+        }
+    }
+
+    .grid-item:hover {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .grid-item:hover::after {
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-item {
+        width: 265px !important;
+        padding: 12px 0px;
+
+        .data {
+            gap: 0px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .grid-item {
+        width: 167px !important;
+    }
+
+    .title {
+        white-space: nowrap;
+
+    }
+
+    .grid-item:hover {
+        transform: translate(0.25rem, -0.25rem);
+    }
+}
